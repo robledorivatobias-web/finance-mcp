@@ -473,4 +473,4 @@ if __name__ == "__main__":
     # Change to mcp.run() for stdio/local Claude Desktop
     import uvicorn
     port = int(os.getenv("PORT", 8000))
-    uvicorn.run(mcp.streamable_http_app, host="0.0.0.0", port=port)
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=port)
